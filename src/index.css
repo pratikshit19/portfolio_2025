@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-white text-gray-900;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
