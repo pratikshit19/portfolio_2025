@@ -44,11 +44,11 @@ const Contact = () => {
   return (
     <div className="h-screen flex flex-col items-center justify-center px-6 bg-[#FAF9F3]">
       <motion.div
-        className="w-full max-w-lg bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-lg border border-gray-300"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
-      >
+  className="w-full max-w-lg bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-lg border border-gray-300"
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6 }}
+>
         <h2 className="text-4xl font-bold text-center text-black">Contact Me 📩</h2>
 
         <form className="mt-6" onSubmit={sendEmail}>

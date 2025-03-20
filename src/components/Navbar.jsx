@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-[#FAF9F3] z-50 border-b border-gray-200 ">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
-        <h1 className="text-2xl font-bold text-black">MyPortfolio</h1>
+        <h1 className="text-2xl font-bold text-black">My Portfolio</h1>
 
         <div className="hidden md:flex space-x-6">
           {["home", "projects", "about", "contact"].map((section) => (
@@ -23,7 +23,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <button className="md:hidden text-gray-700" onClick={() => setIsOpen(!isOpen)}>☰</button>
+        <button className=" cursor-pointer md:hidden text-2xl text-gray-700" onClick={() => setIsOpen(!isOpen)}>☰</button>
       </div>
 
       {isOpen && (
