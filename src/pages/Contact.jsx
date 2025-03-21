@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center px-6 bg-[#FAF9F3]">
+    <div className=" bg-gradient-contact h-screen flex flex-col items-center justify-center px-6 bg-[#FAF9F3]">
       <motion.div
   className="w-full max-w-lg bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-lg border border-gray-300"
   initial={{ opacity: 0, scale: 0.9 }}
@@ -84,7 +84,7 @@ const Contact = () => {
               className="w-full p-3 bg-gray-100 text-gray-800 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-400"
             ></textarea>
           </div>
-          <button type="submit" className="w-full p-3 bg-black hover:bg-[#AEEA94] hover:text-black rounded-lg text-lg text-white">
+          <button type="submit" className="w-full p-3 bg-black hover:bg-[#57B4BA] rounded-lg text-lg text-white">
             Send Message
           </button>
         </form>

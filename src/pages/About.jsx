@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative h-screen flex flex-col items-center justify-center px-6 bg-[#FAF9F3] overflow-hidden">
+    <div className=" bg-gradient-about relative h-screen flex flex-col items-center justify-center px-6 bg-[#FAF9F3] overflow-hidden">
         {/* <div className="absolute top-10 left-10 w-500 h-500 bg-blue-300 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-10 right-10 w-500 h-500 bg-pink-200 rounded-full blur-3xl opacity-50"></div> */}
       <motion.div

@@ -8,5 +8,83 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+/*subtle grid background */
+.bg-grid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+.bg-gradient-home {
+  background: linear-gradient(to bottom right, #FAF9F3 0%, #FAF9F3 60%, rgb(220, 255, 253) 100%);
+  
+}
+/* .bg-gradient-projects {
+  background: linear-gradient(to top right, #FAF9F3 0%, #FAF9F3 50%, rgb(220, 255, 253) 100%),
+              linear-gradient(to bottom left, #FAF9F3 0%, #FAF9F3 50%, rgb(220, 255, 253) 100%);
+  background-blend-mode: overlay;
+} */
+.bg-gradient-projects {
+  position: relative;
+  overflow: hidden; /* Prevents pseudo-elements from overflowing */
+  background: #FAF9F3; /* Fallback color */
+  z-index: 1; /* Ensure the main container is above */
+}
+
+.bg-gradient-projects::before,
+.bg-gradient-projects::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: -1; /* Push pseudo-elements behind everything */
+}
+
+.bg-gradient-projects::before {
+  background: linear-gradient(to top right, #FAF9F3 0%, #FAF9F3 20%, rgb(220, 255, 253) 100%);
+  top: 0;
+  right: 0;
+}
+
+.bg-gradient-projects::after {
+  background: linear-gradient(to bottom left, #FAF9F3 0%, #FAF9F3 40%, rgb(220, 255, 253) 100%);
+  bottom: 0;
+  left: 0;
+}
+
+.bg-gradient-about {
+  position: relative;
+  overflow: hidden; /* Prevents pseudo-elements from overflowing */
+  background: #FAF9F3; /* Fallback color */
+  z-index: 1; /* Ensure the main container is above */
+}
+
+.bg-gradient-about::before,
+.bg-gradient-about::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: -1; /* Push pseudo-elements behind everything */
+}
+
+.bg-gradient-about::before {
+  background: linear-gradient(to top left, #FAF9F3 0%, #FAF9F3 30%, rgb(220, 255, 253) 100%);
+  top: 0;
+  left: 0;
+}
+
+.bg-gradient-about::after {
+  background: linear-gradient(to bottom right, #FAF9F3 0%, #FAF9F3 50%, rgb(220, 255, 253) 100%);
+  bottom: 0;
+  right: 0;
+}
+
+.bg-gradient-contact {
+  background: linear-gradient(to top right, #FAF9F3 0%, #FAF9F3 70%, rgb(220, 255, 253) 100%);
+  
+}
+
+
+
 
 
