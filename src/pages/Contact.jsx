@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import myImage from "../assets/mail-3d.png"; // Ensure the path is correct
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -20,7 +21,7 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_mvqs5pc",  // Replace with your EmailJS Service ID
+        "service_mvqs5pc", // Replace with your EmailJS Service ID
         "template_fsvt6v8", // Replace with your EmailJS Template ID
         {
           from_name: formData.name,
@@ -42,14 +43,18 @@ const Contact = () => {
   };
 
   return (
-    <div className=" bg-gradient-contact h-screen flex flex-col items-center justify-center px-6 bg-[#FAF9F3]">
+    <div className="bg-gradient-contact h-screen flex flex-col items-center justify-center px-6 bg-[#FAF9F3]">
       <motion.div
-  className="w-full max-w-lg bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-lg border border-gray-300"
-  initial={{ opacity: 0, scale: 0.9 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.6 }}
->
-        <h2 className="text-4xl font-bold text-center text-black">Contact Me 📩</h2>
+        className="mx-10 w-full max-w-lg bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-lg border border-gray-300"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        {/* Contact Title with Image */}
+        <div className="flex items-center justify-center space-x-3">
+          <h2 className="text-4xl font-bold text-black">Contact Me</h2>
+          <img src={myImage} alt="Contact" className="w-12 h-12" />
+        </div>
 
         <form className="mt-6" onSubmit={sendEmail}>
           <div className="mb-4">
@@ -92,7 +97,10 @@ const Contact = () => {
         {status && <p className="text-center mt-4 text-gray-700">{status}</p>}
 
         <p className="text-center text-gray-600 mt-4">
-          Or email me at <a href="mailto:pratikshit22@gmail.com" className="text-blue-500 hover:underline">pratikshit22@gmail.com</a>
+          Or email me at{" "}
+          <a href="mailto:pratikshit22@gmail.com" className="text-[#261FB3] hover:underline">
+            pratikshit22@gmail.com
+          </a>
         </p>
       </motion.div>
     </div>

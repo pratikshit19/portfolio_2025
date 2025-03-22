@@ -9,7 +9,9 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
+    
     <div className="bg-gradient-blobs min-h-screen bg-white">
+      
       <Navbar />
       <main className="overflow-y-auto">
         <Element name="home"><Home /></Element>
@@ -18,7 +20,9 @@ function App() {
         <Element name="contact"><Contact /></Element>
       </main>
       <Footer />
+      
     </div>
+    
   );
 }
 
