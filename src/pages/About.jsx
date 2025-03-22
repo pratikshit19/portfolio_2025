@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import laptopBackground from "../assets/laptop_bg.png";
 import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import { SiMongodb, SiFlutter, SiTensorflow } from "react-icons/si";
+import profilePicture from "../assets/pp.jpg";
 
 const About = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center px-6 md:px-6 bg-[#FAF9F3] overflow-hidden">
-   
+    <div className="relative h-screen flex items-center justify-center px-4 md:px-6 bg-[#FAF9F3] overflow-hidden">
+
       {/* Content */}
       <motion.div
         className="relative z-10 flex flex-col md:flex-row items-center w-full max-w-4xl md:max-w-5xl bg-white/80 backdrop-blur-md p-6 md:p-10 rounded-lg md:rounded-xl shadow-lg border border-gray-300"
@@ -16,7 +17,7 @@ const About = () => {
       >
         {/* Left: Animated Image */}
         <motion.img
-          src={laptopBackground}
+          src={profilePicture}
           alt="Laptop"
           className="w-40 md:w-60 lg:w-80 mb-4 md:mb-0 md:mr-6 lg:mr-8 rounded-lg shadow-md"
           initial={{ opacity: 0, x: -50 }}

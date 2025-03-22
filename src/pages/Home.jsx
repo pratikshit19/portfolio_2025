@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import laptopBackground from "../assets/laptop_bg.png";
+
 
 
 const Home = () => {
   return (
     <div className="bg-gradient-home relative h-screen flex flex-col items-center justify-center px-6 text-center bg-[#FAF9F3] overflow-hidden">
-      
+
       {/* Name Heading */}
       
         <motion.h1

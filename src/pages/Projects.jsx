@@ -5,6 +5,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay"; // Ensure all styles are imported
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import codingBg from "../assets/codingbg.jpg"
+
 
 const projects = [
   {
@@ -33,7 +35,9 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center px-8 bg-[#FAF9F3]/90 w-full">
+    <div className=" relative h-screen flex flex-col items-center justify-center px-8 bg-[#FAF9F3]/90 w-full">
+      <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${codingBg})` }}></div>
+
       <h2 className="text-4xl font-bold mb-6 text-black">Projects 🚀</h2>
 
       <Swiper

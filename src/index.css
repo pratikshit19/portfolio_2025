@@ -20,7 +20,7 @@ body {
   color: gray !important; /* Change arrow color */
   border-radius: 50%; /* Make it round */
   width: 10px; /* Set button size */
-  height: 10px;
+  height: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
