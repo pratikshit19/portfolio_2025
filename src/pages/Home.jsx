@@ -41,14 +41,14 @@ const Home = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
         >
-          <Link 
-            to="projects" 
-            smooth={true} 
-            duration={500} 
-            className="px-6 py-3 bg-black text-white rounded-lg shadow-md hover:bg-[#261FB3] hover:text-white transition-all cursor-pointer"
-          >
-            View Projects
-          </Link>
+          <a 
+    href="/PratikshitKumarResume.pdf" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="px-6 py-3 bg-black text-white rounded-lg shadow-md hover:bg-[#261FB3] hover:text-white transition-all cursor-pointer"
+  >
+    My Resume
+  </a>
 
           <Link 
             to="contact" 

@@ -17,7 +17,7 @@ const Footer = () => {
             <li><a href="#about" className="hover:text-gray-100 transition">About</a></li>
             <li><a href="#projects" className="hover:text-gray-100 transition">Projects</a></li>
             <li><a href="#contact" className="hover:text-gray-100 transition">Contact</a></li>
-            <li><a href="/resume.pdf" className="hover:text-gray-100 transition">Resume</a></li>
+            <li><a href="/PratikshitKumarResume.pdf" className="hover:text-gray-100 transition">Resume</a></li>
           </ul>
         </nav>
 
@@ -26,10 +26,10 @@ const Footer = () => {
           <a href="https://github.com/pratikshit19" target="_blank" className="hover:text-gray-300 transition">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/pratikshit19" target="_blank" className="hover:text-gray-300 transition">
+          <a href="https://www.linkedin.com/in/pratikshit-kumar-460b6b1b7/" target="_blank" className="hover:text-gray-300 transition">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/pratikshit19" target="_blank" className="hover:text-gray-300 transition">
+          <a href="https://x.com/Kumarprat19" target="_blank" className="hover:text-gray-300 transition">
             <FaTwitter />
           </a>
           <a href="mailto:pratikshit22@gmail.com" className="hover:text-gray-300 transition">

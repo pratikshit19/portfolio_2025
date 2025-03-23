@@ -6,7 +6,7 @@ import profilePicture from "../assets/pp.jpg";
 
 const About = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center px-4 md:px-6 bg-[#FAF9F3] overflow-hidden">
+    <div className="relative h-screen flex items-center justify-center px-6 md:px-6 bg-[#FAF9F3] overflow-hidden">
 
       {/* Content */}
       <motion.div

@@ -36,9 +36,9 @@ const projects = [
 const Projects = () => {
   return (
     <div className=" relative h-screen flex flex-col items-center justify-center px-8 bg-[#FAF9F3]/90 w-full">
-      <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${codingBg})` }}></div>
+      <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{ backgroundImage: `url(${codingBg})` }}></div>
 
-      <h2 className="text-4xl font-bold mb-6 text-black">Projects 🚀</h2>
+      <h2 className="text-4xl font-bold mb-6 text-black relative z-10">Projects 🚀</h2>
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
