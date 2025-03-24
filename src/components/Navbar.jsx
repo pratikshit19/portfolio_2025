@@ -16,7 +16,7 @@ const Navbar = () => {
               to={section}
               smooth={true}
               duration={500}
-              className="cursor-pointer text-gray-700 hover:text-[#57B4BA] transition-all text-lg font-medium"
+              className="cursor-pointer text-gray-700 hover:text-[#261FB3] transition-all text-lg font-medium"
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
               to={section}
               smooth={true}
               duration={500}
-              className="cursor-pointer text-gray-700 py-2 hover:text-[#57B4BA] transition-all text-lg font-medium"
+              className="cursor-pointer text-gray-700 py-2 hover:text-[#261FB3] transition-all text-lg font-medium"
               onClick={() => setIsOpen(false)}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}

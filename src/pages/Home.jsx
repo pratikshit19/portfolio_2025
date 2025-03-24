@@ -54,7 +54,7 @@ const Home = () => {
             to="contact" 
             smooth={true} 
             duration={500} 
-            className="px-6 py-3 border border-black text-black rounded-lg hover:text-[#57B4BA] hover:border-[#57B4BA] transition-all cursor-pointer"
+            className="px-6 py-3 border border-black text-black rounded-lg hover:text-[#261FB3] hover:border-[#261FB3] transition-all cursor-pointer"
           >
             Contact Me
           </Link>
@@ -67,7 +67,7 @@ const Home = () => {
           <a href="https://github.com/pratikshit19" className="text-black hover:text-gray-600 transition">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/pratikshit-kumar-460b6b1b7/" className="text-blue-500 hover:text-blue-400 transition">
+          <a href="https://www.linkedin.com/in/pratikshit-kumar-460b6b1b7/" className="text-blue-500 hover:text-blue-600 transition">
             <FaLinkedin />
           </a>
         </div>
